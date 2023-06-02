@@ -8,15 +8,15 @@ const Hero: FC<IHero> = ({ background, handleOpen }) => {
       <div>
         <Image
           src={background}
-          className="absolute -z-10 top-0 h-full saturate-150 "
+          className="absolute -z-10 top-0 h-full saturate-150 object-cover"
           alt="background_hero"
         />
       </div>
-      <div className="header_text  flex justify-center">
-        <div className="header_box bg-desc rounded-3xl p-10 text-white flex flex-col items-center">
-          <h1 className="text-4xl  text-center">STROY LEVEL</h1>
+      <div className="header_text w-2/3 md:w-1/5 m-auto flex justify-center">
+        <div className="header_box  bg-desc rounded-3xl py-5 md:p-10 text-white flex flex-col items-center">
+          <h1 className="text-2xl md:text-4xl  text-center">STROY LEVEL</h1>
           <hr className="w-16 my-6 h-1 bg-orangeLogo border-none" />
-          <div className="text-3xl w-96 text-center mb-7">
+          <div className="text-xl w-full md:w-96 md:text-3xl  text-center mb-7">
             Доверьте ваш интерьер профессионалам своего дела!
           </div>
           <button

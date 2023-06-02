@@ -1,0 +1,66 @@
+.marquee {
+    display: flex;
+    overflow: hidden;
+    gap: 10%;
+}
+
+.marq1 {
+    width: 100%;
+    display: flex;
+    gap: 10%;
+    animation: marquee 25s linear infinite;
+    margin-right: 10%;
+    // animation-play-state: running;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marq2 {
+    width: 100%;
+    display: inline-block;
+    animation: marquee2 7s linear 5s infinite;
+    transform: translateX(-270%);
+}
+
+@keyframes marquee2 {
+    0% {
+        // transform: translateX(-270%);
+    }
+
+    100% {
+        transform: translateX(320%);
+    }
+}
+
+.start {
+    background: #7d6453;
+    box-shadow: #7d6453 0px 0px 50px 77px;
+}
+
+@media all and (max-width: 490px) {
+    .start {
+        box-shadow: #7d6453 0px 0px 20px 40px;
+    }
+
+    .end {
+        box-shadow: #7d6453 0px 0px 20px 40px;
+    }
+}
+
+.end {
+    background: #655958;
+    box-shadow: #655958 0px 0px 50px 77px;
+}
+
+// background: #7d6453;
+// box-shadow: #7d6453 0px 0px 50px 77px;
+// }

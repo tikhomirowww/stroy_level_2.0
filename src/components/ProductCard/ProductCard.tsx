@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ProductCard: FC<IProductCard> = ({ image, desc, title, link }) => {
   return (
-    <div className="bg-white w-72 p-2 border-2 border-black mx-8">
+    <div className="bg-white w-72 p-2 border-2 border-black mx-8 pb-8 ">
       <Image
         className="w-full h-56 object-cover"
         width={200}

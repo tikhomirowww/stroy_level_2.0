@@ -1,21 +1,35 @@
-import React from "react";
+import React, { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { pages } from "./consts";
 import { IPage } from "./Navbar.types";
 import { BsInstagram } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import { HiMenuAlt1 } from "react-icons/hi";
+import { log } from "console";
 
-const Navbar = () => {
+const Navbar: FC<{ setSide: (state: boolean) => void }> = ({ setSide }) => {
+  // console.log(setSide);
+
   return (
-    <div className="h-28 bg-black flex items-center justify-between px-7 text-lg sticky z-10 top-0 w-full max-w-[120rem] m-auto">
-      <div>
+    <div className="h-28 bg-black flex items-center justify-between px-7 text-lg sticky z-20 top-0 w-full max-w-[120rem] m-auto">
+      <div className="block md:hidden">
+        <HiMenuAlt1 onClick={() => setSide(true)} color="white" size={30} />
+      </div>
+      <div className="">
         <Link href="/">
-          <Image priority src="/logo.png" width={100} height={100} alt="logo" />
+          <Image
+            className="w-20 sm:w-24"
+            priority
+            src="/logo.png"
+            width={100}
+            height={100}
+            alt="logo"
+          />
         </Link>
       </div>
-      <ul className="nav-items flex w-2/4 justify-around">
-        {pages.map((item: IPage, i: number) => (
+      <ul className="nav-items md:flex w-2/4 justify-around hidden">
+        {pages.map((item: IPage, i) => (
           <li
             key={i}
             className="text-white text-xl hover:text-orangeLogo  hover:scale-150 transition-all duration-1000"
@@ -25,26 +39,26 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="social">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-around sm:justify-between items-center">
           <Link href="https://www.instagram.com/stroy_level.kg/">
             <BsInstagram
-              className="hover:fill-orangeLogo hover:rotate-12 transition-all duration-200"
+              className="hover:fill-orangeLogo hover:rotate-12 transition-all duration-200 sm:w-8 w-6"
               fill="white"
               size={32}
             />
           </Link>
           <Link href="mailto: stroylevel.kg@gmail.com">
             <MdEmail
-              className="hover:fill-orangeLogo hover:rotate-12 transition-all duration-200"
+              className="hover:fill-orangeLogo hover:rotate-12 transition-all duration-200 sm:w-10 w-8"
               fill="white"
               size={40}
             />
           </Link>
         </div>
-        <div className="text-white flex flex-col ">
+        <div className="text-white flex flex-col text-base sm:text-lg">
           <Link
             href="tel:+996505545945"
-            className="hover:text-orangeLogo hover:scale-110 transition-all duration-500"
+            className="hover:text-orangeLogo  hover:scale-110 transition-all duration-500"
           >
             0505 545-945
           </Link>

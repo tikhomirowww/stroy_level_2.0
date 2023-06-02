@@ -1,0 +1,13 @@
+.whyItem {
+    flex-wrap: wrap;
+}
+
+@media all and (max-width: 940px) {
+    .whyItem {
+        flex-wrap: wrap;
+
+        svg {
+            width: 80px;
+        }
+    }
+}

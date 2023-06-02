@@ -17,10 +17,6 @@ const Meta: FC<PropsWithChildren<IMeta>> = ({
             <meta name="og:title" content={title} />
             <meta name="og:description" content={title} />
             <link rel="icon" href="/logo.png" />
-            <link
-              href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap"
-              rel="stylesheet"
-            />
           </>
         ) : (
           <>

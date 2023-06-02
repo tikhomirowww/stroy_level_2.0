@@ -1,3 +1,6 @@
+import { IProductCard } from "../ProductCard/ProductCard.types"
+
 export interface ICarousel {
-    images: string[]
+    images?: string[],
+    cards?: IProductCard[]
 }

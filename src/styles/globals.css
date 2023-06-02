@@ -2,8 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
+
 body {
   font-family: Crimson;
+  /* width: 102%; */
+}
+
+@media all and (max-width: 490px) {
+  body {
+    width: 102%
+  }
+}
+
+@media all and (max-width: 350px) {
+  body {
+    width: 110%
+  }
 }
 
 .no_scroll {
@@ -44,28 +61,20 @@ option:hover {
 
 .product_list {
   background: rgb(2, 0, 36);
-  background: linear-gradient(221deg, rgba(2, 0, 36, 1) 6%, rgba(121, 56, 9, 1) 67%);
 }
 
-
-
-.product-desc {
-  transform: translateY(400px);
-  height: 0;
-  margin: 0;
-  opacity: 0;
+.gradient {
+  background: linear-gradient(171deg, rgba(0, 0, 0, 1) 12%, rgba(213, 86, 18, 1) 73%, rgba(252, 232, 70, 1) 100%);
 }
 
-.product-card:hover .product-desc {
-  height: 100%;
-  opacity: 1;
-  transform: translateY(0%);
-  width: 100%;
-  color: white;
-  padding: 60px 20px;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.929));
-}
-
-.dark-overlay {
-  height: 100%;
+.control-dots {
+  background: #80828399;
+  border-radius: 8px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 40% !important;
+  left: 29%;
 }

@@ -1,8 +1,21 @@
 import React, { FC } from "react";
 import { ISection } from "./Section.types";
+import styles from "./Section.module.scss";
 
 const Section: FC<ISection> = ({ className, children }) => {
-  return <div className={`product_list ${className}`}>{children}</div>;
+  const dynamicClasses = className
+    ? className.split(" ").map((cls) => styles[cls])
+    : [];
+
+  return (
+    <div
+      className={`${styles.product_list}  ${className} ${dynamicClasses.join(
+        " "
+      )}`}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Section;

@@ -1,0 +1,49 @@
+.product_list {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(221deg, rgba(2, 0, 36, 1) 6%, rgba(121, 56, 9, 1) 67%);
+}
+
+.py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.p-14 {
+    padding: 3.5rem;
+}
+
+.p-5 {
+    padding: 1.25rem;
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.gap-32 {
+    gap: 8rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.section_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 1.25rem 0;
+    width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap");
+
+// * {
+//     box-sizing: border-box;
+// }
+
+// body {
+//     min-height: 100vh;
+// }

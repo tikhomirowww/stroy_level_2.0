@@ -24,6 +24,8 @@ module.exports = {
       adv: "#80828399",
     },
   },
+  // purge: [],
+  // variants: {},
 
   plugins: [],
 };
