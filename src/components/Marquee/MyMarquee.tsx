@@ -2,13 +2,9 @@ import React, { FC } from "react";
 import styles from "./Marquee.module.scss";
 import { IMarquee } from "./Marquee.types";
 import Marquee from "react-fast-marquee";
+import Image from "next/image";
 
 const MyMarquee: FC<IMarquee> = ({ elem }) => {
-  const textItems = ["Пример 1", "Пример 2", "Пример 3"];
-  //   console.log(elem);
-
-  //   console.log(typeof elem[0].icon);
-
   return (
     <div
       className={`top-0 flex overflow-hidden relative gap-40 bg-adv w-5/6 m-auto rounded-lg p-5 justify-center`}
@@ -26,10 +22,14 @@ const MyMarquee: FC<IMarquee> = ({ elem }) => {
               key={i}
               className={`${styles.whyItem} w-56 mx-1 mr-1 flex flex-col items-center`}
             >
-              <div className="bg-orangeLogo rounded-lg p-3">
-                {<item.icon className="m-auto" size={120} />}
+              <div>
+                {item.icon ? (
+                  <item.icon className="m-auto" size={120} />
+                ) : (
+                  <img src={item.image} />
+                )}
               </div>
-              <h2 className="text-3xl text-center font-medium mt-8 ">
+              <h2 className="text-3xl text-white text-center font-medium mt-8 ">
                 {item.title}
               </h2>
             </div>
@@ -37,42 +37,6 @@ const MyMarquee: FC<IMarquee> = ({ elem }) => {
         </div>
       </Marquee>
     </div>
-    // <div
-    //   className={`flex relative h-[290px] bg-adv w-5/6 m-auto rounded-lg p-5 justify-center`}
-    // >
-    //   <div className={`${styles.marquee} absolute w-3/4 m-auto`}>
-    //     <span className={styles.marq1}>
-    //       {elem.map((item, i) => (
-    //         <div
-    //           key={i}
-    //           className={`${styles.whyItem} sm:w-56 mx-1 flex flex-col items-center`}
-    //         >
-    //           <div className="bg-orangeLogo rounded-lg p-3">
-    //             {<item.icon className="m-auto" size={120} />}
-    //           </div>
-    //           <h2 className="text-3xl text-center font-medium mt-8 ">
-    //             {item.title}
-    //           </h2>
-    //         </div>
-    //       ))}
-    //     </span>
-    //     <span aria-hidden="true" className={styles.marq1}>
-    //       {elem.map((item, i) => (
-    //         <div
-    //           key={i}
-    //           className={`${styles.whyItem} sm:w-56 mx-1 flex flex-col items-center`}
-    //         >
-    //           <div className="bg-orangeLogo rounded-lg p-3">
-    //             {<item.icon className="m-auto" size={120} />}
-    //           </div>
-    //           <h2 className="text-3xl text-center font-medium mt-8 ">
-    //             {item.title}
-    //           </h2>
-    //         </div>
-    //       ))}
-    //     </span>
-    //   </div>
-    // </div>
   );
 };
 export default MyMarquee;

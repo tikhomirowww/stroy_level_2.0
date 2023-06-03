@@ -40,14 +40,17 @@ const Navbar: FC<{ setSide: (state: boolean) => void }> = ({ setSide }) => {
       </ul>
       <div className="social">
         <div className="flex justify-around sm:justify-between items-center">
-          <Link href="https://www.instagram.com/stroy_level.kg/">
+          <Link
+            target="_blank"
+            href="https://www.instagram.com/stroy_level.kg/"
+          >
             <BsInstagram
               className="hover:fill-orangeLogo hover:rotate-12 transition-all duration-200 sm:w-8 w-6"
               fill="white"
               size={32}
             />
           </Link>
-          <Link href="mailto: stroylevel.kg@gmail.com">
+          <Link target="_blank" href="mailto: stroylevel.kg@gmail.com">
             <MdEmail
               className="hover:fill-orangeLogo hover:rotate-12 transition-all duration-200 sm:w-10 w-8"
               fill="white"
@@ -57,12 +60,14 @@ const Navbar: FC<{ setSide: (state: boolean) => void }> = ({ setSide }) => {
         </div>
         <div className="text-white flex flex-col text-base sm:text-lg">
           <Link
+            target="_blank"
             href="tel:+996505545945"
             className="hover:text-orangeLogo  hover:scale-110 transition-all duration-500"
           >
             0505 545-945
           </Link>
           <Link
+            target="_blank"
             href="tel:+996555545945"
             className="hover:text-orangeLogo hover:scale-110 transition-all duration-500"
           >

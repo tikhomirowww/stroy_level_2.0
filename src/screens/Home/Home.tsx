@@ -8,10 +8,10 @@ import Why from "@/components/Why/Why";
 import Title from "@/components/Title/Title";
 import Section from "@/components/Section/Section";
 import ProductCard from "@/components/ProductCard/ProductCard";
-import { WhyItems, cardsData } from "./consts";
+import { WhyItems, cardsData, clients } from "./consts";
 import MyCarousel from "@/components/MyCarousel/MyCarousel";
 import MyMarquee from "@/components/Marquee/MyMarquee";
-import SideBar from "@/components/SideBar/SideBar";
+// import SideBar from "@/components/SideBar/SideBar";
 
 export default function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -95,7 +95,7 @@ export default function HomePage() {
       </div>
       <Title name="Почему мы?" />
       <Section className="py-16">
-        <MyMarquee elem={WhyItems} />
+        <MyMarquee elem={clients} />
         {/* <Why /> */}
       </Section>
     </Layout>

@@ -34,7 +34,8 @@ export const cardsData: IProductCard[] = [
 
 export interface IWhy {
   title: string;
-  icon: typeof AiOutlineGlobal ;
+  icon?: typeof AiOutlineGlobal;
+  image?: string
 }
 
 export const WhyItems: IWhy[] = [
@@ -54,7 +55,11 @@ export const WhyItems: IWhy[] = [
     title: "Своё производство",
     icon: GoTools 
   }
-
-  
-
 ];
+
+export const clients = [
+  {
+    title: 'MBank',
+    image: '/mbank.png'
+  }
+]
