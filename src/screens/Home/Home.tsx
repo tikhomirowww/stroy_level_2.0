@@ -93,7 +93,7 @@ export default function HomePage() {
           ))}
         </Section>
       </div>
-      <Title name="Почему мы?" />
+      <Title name="Наши клиенты" />
       <Section className="py-16">
         <MyMarquee elem={clients} />
         {/* <Why /> */}
