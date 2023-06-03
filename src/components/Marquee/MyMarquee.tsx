@@ -26,7 +26,16 @@ const MyMarquee: FC<IMarquee> = ({ elem }) => {
                 {item.icon ? (
                   <item.icon className="m-auto" size={120} />
                 ) : (
-                  <img width={100} src={item.image} />
+                  <img
+                    width={
+                      item.title === "ELITE HOUSE"
+                        ? 200
+                        : item.title === "Avangard"
+                        ? 150
+                        : 110
+                    }
+                    src={item.image}
+                  />
                 )}
               </div>
               <h2 className="text-3xl text-white text-center font-medium mt-8 ">

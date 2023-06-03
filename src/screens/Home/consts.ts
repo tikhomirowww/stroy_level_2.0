@@ -61,5 +61,13 @@ export const clients = [
   {
     title: 'MBank',
     image: '/mbank.png'
+  },
+  {
+    title: 'ELITE HOUSE',
+    image: '/elite_house.jpg'
+  },
+  {
+    title: 'Avangard',
+    image: '/avangard.png'
   }
 ]
