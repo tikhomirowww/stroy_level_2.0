@@ -9,7 +9,7 @@ import { demoKaminy, kaminyImg } from "./consts";
 const Kaminy = () => {
   return (
     <Layout title="Биоамины" description="Биокамины в Бишкеке">
-      <Section className="h-[650px] flex items-center justify-around">
+      <Section className="md:h-[650px] md:flex p-7 items-center justify-around product__hero_adap">
         <Description
           title="Биоамины"
           description="Биокамин — это современное устройство с живым пламенем, не нуждающееся в дымовой вентиляции и не предполагающее использования деревянных поленьев. Его конструкция включает в себя топливный блок и декоративную отделку."

@@ -1,9 +1,19 @@
 .product_card {
     position: relative;
-    width: 25rem;
+    width: 25%;
     height: 25rem;
+    margin: 30px auto;
+
+    @media all and (max-width: 769px) {
+        & {
+            width: 70%;
+            height: 20rem;
+        }
+    }
+
 
     &:hover .product_desc {
+        // display: block;
         height: 100%;
         opacity: 1;
         transform: translateY(0%);
@@ -34,6 +44,7 @@
         height: 0;
         margin: 0;
         opacity: 0;
+        // display: none;
     }
 
     h2 {

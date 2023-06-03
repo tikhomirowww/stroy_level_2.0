@@ -10,7 +10,7 @@ import { demoPotolki, poptolkiImg } from "./consts";
 const Potolki = () => {
   return (
     <Layout title="Потолки" description="Подвесные потолки - грильято">
-      <Section className="h-[650px] flex items-center justify-around">
+      <Section className="md:h-[650px] md:flex p-7 items-center justify-around product__hero_adap">
         <Description
           title="Грильято"
           description="Грильято — ячеистый подвесной потолок, созданный дизайнерами из Италии более 50-ти лет назад."

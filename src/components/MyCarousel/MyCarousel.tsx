@@ -8,7 +8,7 @@ import ProductCard from "../ProductCard/ProductCard";
 const MyCarousel: FC<ICarousel> = ({ images, cards }) => {
   return (
     <Carousel
-      className="w-96 relative"
+      className="md:w-96 w-80 relative m-auto mt-7"
       showArrows={false}
       showThumbs={false}
       showStatus={false}

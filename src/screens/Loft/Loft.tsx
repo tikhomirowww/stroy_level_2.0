@@ -11,7 +11,7 @@ import { demoLoft, loftCarousel } from "./consts";
 const Loft = () => {
   return (
     <Layout title="Лофт" description="Лофт перегородки">
-      <Section className="h-[650px] flex items-center justify-around">
+      <Section className="md:h-[650px] md:flex p-7 items-center justify-around product__hero_adap">
         <Description
           title="Лофт"
           description="Перегородки лофт представляют собой сварные металлические конструкции с заполнением из стекла. Конструкции используют для зонирования внутреннего пространства коммерческих и жилых помещений."
@@ -19,7 +19,7 @@ const Loft = () => {
         <MyCarousel images={loftCarousel} />
       </Section>
       <Title name="Виды перегородок" />
-      <Section className="flex justify-around py-14">
+      <Section className="md:flex justify-around py-14">
         {demoLoft.map((item, i) => (
           <Demo
             key={i}

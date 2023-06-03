@@ -10,7 +10,7 @@ import { demoShower, showerImg } from "./consts";
 const Shower = () => {
   return (
     <Layout title="Душевые" description="Душевые - бишкек">
-      <Section className="h-[650px] flex items-center justify-around">
+      <Section className="md:h-[650px] md:flex p-7 items-center justify-around product__hero_adap">
         <Description
           title="Душевые"
           description="Душевые перегородки из стекла очень популярны в современных интерьерах ванных комнат, так как изящно, просто и надежно трансформируют пространство, создавая новые конструкции и функциональные возможности этой комнаты."
@@ -18,7 +18,7 @@ const Shower = () => {
         <MyCarousel images={showerImg} />
       </Section>
       <Title name="Виды душевых перегородок" />
-      <Section className="flex justify-around gap-32 flex-wrap p-5">
+      <Section className="flex justify-around flex-wrap p-5">
         {demoShower.map((item, i) => (
           <Demo
             key={i}
