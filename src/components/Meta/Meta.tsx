@@ -15,7 +15,11 @@ const Meta: FC<PropsWithChildren<IMeta>> = ({
           <>
             <meta name="description" content={description} />
             <meta name="og:title" content={title} />
-            <meta name="og:description" content={title} />
+            <meta name="og:description" content={description} />
+            <meta
+              name="keywords"
+              content="лофт перегородки, перегородки, лофт, душевые, биокамины, потолки, грильято, ремонт, дизайн, интерьер, бишкекб интерьерные решения, Дизайн пространства, Уют и комфорт,  Эстетика и функциональность, Качество и надежность, Индивидуальный дизайн, Монтаж и установка, Широкий выбор стилей и размеров, Безопасность и удобство использования"
+            />
             <link rel="icon" href="/logo.png" />
           </>
         ) : (

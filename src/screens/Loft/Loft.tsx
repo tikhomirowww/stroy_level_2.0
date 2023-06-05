@@ -10,7 +10,10 @@ import { demoLoft, loftCarousel } from "./consts";
 
 const Loft = () => {
   return (
-    <Layout title="Лофт" description="Лофт перегородки">
+    <Layout
+      title="Лофт"
+      description="Лучшие лофт перегородки в Бишкеке - уникальное сочетание стиля и функциональности. Создайте пространство своей мечты с нашими качественными и элегантными перегородками. Индивидуальный дизайн, прочность и надежность - наша гарантия. Закажите лофт перегородку прямо сейчас и преобразите свое жилище!"
+    >
       <Section className="md:h-[650px] md:flex p-7 items-center justify-around product__hero_adap">
         <Description
           title="Лофт"
