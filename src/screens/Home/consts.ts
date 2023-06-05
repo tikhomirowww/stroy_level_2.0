@@ -35,6 +35,7 @@ export const cardsData: IProductCard[] = [
 export interface IWhy {
   title: string;
   icon?: typeof AiOutlineGlobal;
+  svg?:  React.ReactNode;
   image?: string
 }
 

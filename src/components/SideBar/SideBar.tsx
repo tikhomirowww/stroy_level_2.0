@@ -2,16 +2,17 @@ import React, { FC } from "react";
 import { pages } from "../Navbar/consts";
 import { ISideBar } from "./SideBar.types";
 import Link from "next/link";
+import Why from "../Why/Why";
 
 const SideBar: FC<ISideBar> = ({ state, setSide }) => {
   console.log(state);
 
   return (
-    <div>
+    <div className="relative">
       {state && (
         <div
           onClick={setSide}
-          className="bg-modalBg z-10 w-screen h-screen modal fixed flex items-center justify-center top-0"
+          className="bg-modalBg z-10 w-screen h-screen modal fixed flex items-center justify-center left-0 right-0 top-0 bottom-0 m-auto"
         ></div>
       )}
       <div
@@ -21,14 +22,18 @@ const SideBar: FC<ISideBar> = ({ state, setSide }) => {
       >
         {state && (
           <>
-            <h2 className="text-center text-2xl">Страницы:</h2>
-            <ul className="mx-3 mt-3">
+            <h2 className="text-center text-3xl">Страницы:</h2>
+            <ul className="mx-3 my-3 mb-7 ">
               {pages.map((item, i) => (
-                <li key={i} className="text-xl mt-2 border-b-2 border-white">
+                <li
+                  key={i}
+                  className="text-2xl mt-2 before:content-['-'] hover:text-orangeLogo"
+                >
                   <Link href={item.link}>{item.name}</Link>
                 </li>
               ))}
             </ul>
+            <Why />
           </>
         )}
       </div>
