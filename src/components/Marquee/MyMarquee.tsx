@@ -15,30 +15,29 @@ const MyMarquee: FC<IMarquee> = ({ elem }) => {
       <div
         className={`absolute ${styles.end} h-full w-[4%] right-0 z-10`}
       ></div>
-      <Marquee speed={70}>
+      <Marquee pauseOnClick={true} speed={70}>
         <div className="flex gap-20">
           {elem.map((item, i) => (
             <div
               key={i}
-              className={`${styles.whyItem} w-56 mx-1 mr-1 flex flex-col items-center`}
+              className={`${styles.whyItem} w-56 mx-1 mr-1 flex flex-col justify-center items-center`}
             >
               <div>
                 {item.icon ? (
                   <item.icon className="m-auto" size={120} />
                 ) : (
                   <img
-                    width={
-                      item.title === "ELITE HOUSE"
-                        ? 200
-                        : item.title === "Avangard"
-                        ? 150
-                        : 110
-                    }
+                    width={item.title === "o" ? 250 : 150}
+                    height={150}
                     src={item.image}
                   />
                 )}
               </div>
-              <h2 className="text-3xl text-white text-center font-medium mt-8 ">
+              <h2
+                className={`text-3xl text-white text-center font-medium ${
+                  item.title === "o" ? "mt-0" : "mt-8"
+                } `}
+              >
                 {item.title}
               </h2>
             </div>

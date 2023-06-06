@@ -60,15 +60,19 @@ export const WhyItems: IWhy[] = [
 
 export const clients = [
   {
-    title: 'MBank',
-    image: '/mbank.png'
+    title: 'KFC',
+    image: '/KFC.webp'
   },
   {
-    title: 'ELITE HOUSE',
-    image: '/elite_house.jpg'
+    title: 'O!',
+    image: '/o3.png'
   },
   {
-    title: 'Avangard',
-    image: '/avangard.png'
+    title: 'StarШина',
+    image: '/shina.png'
+  },
+  {
+    title: 'Мед. центр Назаралиева',
+    image: '/med.jpeg'
   }
 ]
