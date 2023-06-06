@@ -38,6 +38,7 @@ const MySelect: FC<SelectProps> = ({ onChange, className }) => {
       styles={customStyles}
       onChange={onChange}
       isSearchable={false}
+      defaultInputValue=""
     />
   );
 };
