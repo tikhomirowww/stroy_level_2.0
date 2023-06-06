@@ -40,13 +40,7 @@ export default function HomePage() {
       description="Создайте идеальное пространство с нами - лидерами в Бишкеке по лофт перегородкам, душевым перегородкам, потолкам и биокаминам. У нас вы найдете широкий выбор качественных и элегантных решений для вашего дома или офиса. Наша команда экспертов поможет вам воплотить ваши дизайнерские идеи в реальность. Независимо от того, нужны вам стильные перегородки, функциональные душевые, впечатляющие потолки или уютные биокамины - мы готовы сделать ваше пространство идеальным. Закажите у нас прямо сейчас и преобразите ваш дом в мечту!"
     >
       <Hero background={BG} handleOpen={handleOpen} />
-      <Modal
-        onClose={handleClose}
-        onClick={() => {}}
-        button="Отправить заявку"
-        title="Оформить замер"
-        isOpen={isOpen}
-      >
+      <Modal onClose={handleClose} title="Оформить замер" isOpen={isOpen}>
         <SendForm setState={setSuccessModal} />
       </Modal>
       <Modal
@@ -55,12 +49,7 @@ export default function HomePage() {
           handleCloseSuccess();
           handleClose();
         }}
-        onClick={() => {
-          handleCloseSuccess();
-          handleClose();
-        }}
         isOpen={successModal}
-        button="Закрыть"
       >
         <center>
           <img

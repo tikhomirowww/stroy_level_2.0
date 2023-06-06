@@ -37,6 +37,7 @@ const MySelect: FC<SelectProps> = ({ onChange, className }) => {
       options={options}
       styles={customStyles}
       onChange={onChange}
+      isSearchable={false}
     />
   );
 };
