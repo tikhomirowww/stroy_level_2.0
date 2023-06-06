@@ -9,8 +9,6 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { log } from "console";
 
 const Navbar: FC<{ setSide: (state: boolean) => void }> = ({ setSide }) => {
-  // console.log(setSide);
-
   return (
     <div className="h-28 bg-black flex items-center justify-between px-7 text-lg sticky z-20 top-0 w-full max-w-[120rem] m-auto">
       <div className="block md:hidden">
@@ -19,7 +17,7 @@ const Navbar: FC<{ setSide: (state: boolean) => void }> = ({ setSide }) => {
       <div className="">
         <Link href="/">
           <Image
-            className="w-20 sm:w-24"
+            className="w-32 sm:w-24"
             priority
             src="/logo.png"
             width={100}
