@@ -78,7 +78,7 @@ export const SendForm: FC<{ setState: any }> = ({ setState }) => {
         </div>
       )}
       <MySelect
-        className={`${selError && "placeholder:text-white"} mySelect`}
+        className={`${selError && "placeholder:text-white"} `}
         onChange={setSel}
       />
       {numError && (

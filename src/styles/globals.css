@@ -80,7 +80,3 @@ option:hover {
     display: flex;
   }
 }
-
-.mySelect {
-  pointer-events: none;
-}
