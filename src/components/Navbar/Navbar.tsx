@@ -17,7 +17,7 @@ const Navbar: FC<{ setSide: (state: boolean) => void }> = ({ setSide }) => {
       <div className="">
         <Link href="/">
           <Image
-            className="w-32 sm:w-24"
+            className="w-28 sm:w-24"
             priority
             src="/logo.png"
             width={100}
