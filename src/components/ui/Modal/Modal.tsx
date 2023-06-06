@@ -4,9 +4,9 @@ import { IModal } from "./Modal.types";
 const Modal: FC<IModal> = ({
   title,
   children,
-  button,
+  // button,
   onClose,
-  onClick,
+  // onClick,
   isOpen,
 }) => {
   useEffect(() => {
